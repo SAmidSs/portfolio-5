@@ -1,0 +1,145 @@
+html{
+    box-sizing: border-box;
+}
+
+
+*, 
+*::after, 
+*::before{
+    box-sizing: inherit;
+}
+
+
+
+ul,
+li[class]{
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+a{
+  text-decoration: none;
+}
+
+html,
+body{
+  height: 100%;
+}
+
+body{
+  color: $text;
+  font-size: 14px;
+  line-height: 20px;
+  @extend %montserrat-500;
+  display: flex;
+  letter-spacing: 0.2px;
+  flex-direction: column;
+}
+
+.container{
+  max-width: 1075px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.main{
+  flex-grow: 1;
+  background: #FAFAFA;
+}
+
+.menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 110px;
+  width: 100%;
+  &__list{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item + .menu__item{
+    margin-left: 21px;
+  }
+  &__link{
+    line-height: 24px;
+    color: $accent;
+    letter-spacing: 0.4px;
+    @extend %montserrat-500;
+  }
+  &__btn{
+    padding: 15px 52px 15px 25px;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    color: $accent;
+    background-color: #23A6F0;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+      top: 21px;
+      right: 21px;
+      background-image: url(../images/icon/arrow-right.svg);
+      width: 12px;
+      height: 10px;
+    }
+  }
+}
+
+
+
+.title{
+  text-align: center;
+  font-size: 40px;
+  line-height: 57px;
+  color: $default;
+  margin-bottom: 10px;
+  @extend %montserrat-700;
+}
+.subtitle{
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  margin-bottom: 112px;
+  @extend %montserrat-500;
+}
+
+
+
