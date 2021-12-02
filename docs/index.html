@@ -12,7 +12,7 @@
 <body>
 
     <header class="header"
-        style="background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../docs/images/header/header-bg.jpg);">
+        style="background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/header/header-bg.jpg);">
         <div class="container">
             <div class="header__menu">
                 <h1 class="header__logo">
@@ -75,9 +75,23 @@
                             <span class="header__form-subtitle">Адрес электронной почты *</span>
                             <input type="email" class="header__form-input" placeholder="example@gmail.com" required>
                             <span class="header__form-subtitle">Департамент *</span>
-                            <input type="text" class="header__form-input">
+                            <div class="dropdown">
+                                <button class="dropdown__btn">Пожалуйста выберите</button>
+                                <div id="dropdown__items" class="dropdown__content">
+                                  <span class="dropdown__item">1</span>
+                                  <span class="dropdown__item">2</span>
+                                  <span class="dropdown__item">3</span>
+                                </div>
+                            </div>
                             <span class="header__form-subtitle">Время *</span>
-                            <input type="text" class="header__form-input">
+                            <div class="dropdown">
+                                <button class="dropdown__btn">Время</button>
+                                <div id="dropdown__items" class="dropdown__content">
+                                  <span class="dropdown__item">15.00</span>
+                                  <span class="dropdown__item">7.00</span>
+                                  <span class="dropdown__item">8.00</span>
+                                </div>
+                            </div>
                             <button class="header__form-btn" type="submit">
                                 Запись на прием
                             </button>
