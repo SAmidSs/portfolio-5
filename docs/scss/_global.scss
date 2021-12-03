@@ -12,7 +12,7 @@ html{
 
 
 ul,
-li[class]{
+li{
     padding: 0;
 }
 
@@ -24,7 +24,7 @@ h4,
 h5,
 h6,
 p,
-ul[class],
+ul,
 ol[class],
 li,
 figure,
@@ -166,7 +166,7 @@ body{
     &__btn{
       background: #F9F9F9;
       border: 1px solid #DDDDDD;
-      padding: 18px 20px;
+      padding: 10px 20px;
       border-radius: 5px;
       cursor: pointer;
       position: relative;

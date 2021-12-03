@@ -109,7 +109,7 @@
         line-height: 22px;
         color: $accent;
         display: block;
-        margin: 40px auto 0;
+        margin: 25px auto 0;
         padding: 15px 0;
         border: none;
         cursor: pointer;
@@ -186,6 +186,7 @@
 .testimonials{
     padding-top: 112px;
     padding-bottom: 112px;
+    margin-bottom: 112px;
     &__box{
         max-width: 676px;
         margin: 0 auto;
@@ -217,6 +218,55 @@
 
 
 
+.questions{
+    padding-bottom: 80px;
+    margin-bottom: 112px;
+    &__box{
+        max-width: 607px;
+        margin: 0 auto;
+    }
+    &__items{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px 30px;
+    }
+    &__item{
+        width: 333px;
+        height: 151px;
+        background-color: #fff;
+        border-radius: 9px;
+        padding: 25px;
+    }
+    &__wrapper{
+        padding-left: 30px;
+        position: relative;
+        display: block;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 9px;
+            height: 16px;
+            background-image: url(../images/icon/arrow-questions.svg);
+        }
+    }
+    &__item-title{
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.1px;
+        color: $default;
+        @extend %montserrat-700;
+        margin-bottom: 5px;
+    }
+    &__item-text{
+        display: block;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        @extend %montserrat-600;
+        color: $text;
+    }
+}
 
 
 
@@ -225,12 +275,130 @@
 
 
 
+.price{
+    margin-bottom: 112px;
+    &__items{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    &__item{
+        background: #FFFFFF;
+        border-radius: 10px;
+        border: 1px solid #23A6F0;
+        padding: 50px 40px;
+        width: 327px;
+        height: 710px;
+        margin: 0 1px;
+        transition: all .3s;
+        &:hover{
+            padding: 70px 40px;
+            background: #252B42;       
+            border: 1px solid #23A6F0;
+            border-radius: 10px;
+            height: 745px;
+            .price__title{
+                color: #fff;
+            }
+            .price__subtitle{
+                color: #fff;
+            }
+            .price__list-item{
+                color: #fff;
+            }
+        }
+    }
+    &__title{
+        font-size: 24px;
+        line-height: 32px;
+        color: $default;
+        margin-bottom: 35px;
+        @extend %montserrat-700;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__subtitle{
+        @extend %montserrat-700;
+        text-align: center;
+        margin-bottom: 35px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    &__wrapper{
+        display: flex;
+        margin-bottom: 35px;
+        justify-content: center;
+        align-items: center;
+    }
+    &__wrapper-number{
+        font-size: 40px;
+        line-height: 57px;
+        color: #23A6F0;
+        margin-right: 10px;
+        @extend %montserrat-700;
+    }
+    &__wrapper-info{
+        font-size: 16px;
+        line-height: 24px;
+        color: #23A6F0;
+        @extend %montserrat-600;
+    }
+    &__wrapper-currency{
+        display: block;
+        @extend %montserrat-700;
+    }
+    &__list-item{
+        padding-left: 45px;
+        margin-bottom: 21px;
+        line-height: 24px;
+        color: $default;
+        @extend %montserrat-600;
+        position: relative;
+    }
+    &__btn{
+        display: block;
+        text-align: center;
+        background: #23A6F0;
+        border-radius: 5px;
+        padding: 15px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        color: $accent;
+        transition: all .3s;
+        border: 1px solid transparent;
+        &:hover{
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid #FFFFFF;
+        }
+    }
+}
 
 
+.price__list-item--noenters,
+.price__list-item--enters{
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 32px;
+        height: 32px;
+    }
+}
+
+.price__list-item--enters{
+    &::before{
+        background-image: url(../images/icon/price-enters.svg);
+    }
+}
 
 
-
-
+.price__list-item--noenters{
+    &::before{
+        background-image: url(../images/icon/price-noenters.svg);
+    }
+}
 
 
 

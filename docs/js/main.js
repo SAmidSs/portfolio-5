@@ -15,7 +15,7 @@ $(function () {
     //     $(on).removeClass('submenu--active');
     // });
     $(".dropdown__btn").click(function () {
-        $(this).siblings(".dropdown__content").slideToggle(350);
+        $(this).siblings(".dropdown__content").slideToggle(0);
     });
 
 })
