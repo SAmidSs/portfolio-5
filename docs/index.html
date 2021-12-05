@@ -69,33 +69,27 @@
                         <h3 class="header__form-title">
                             Запись на прием
                         </h3>
-                        <label class="header__form-label">
+                        <div class="header__form-label">
                             <span class="header__form-subtitle">Имя *</span>
                             <input type="text" class="header__form-input" placeholder="Полное имя" required>
                             <span class="header__form-subtitle">Адрес электронной почты *</span>
                             <input type="email" class="header__form-input" placeholder="example@gmail.com" required>
                             <span class="header__form-subtitle">Департамент *</span>
-                            <div class="dropdown">
-                                <button class="dropdown__btn">Пожалуйста выберите</button>
-                                <div id="dropdown__items" class="dropdown__content">
-                                    <span class="dropdown__item">1</span>
-                                    <span class="dropdown__item">2</span>
-                                    <span class="dropdown__item">3</span>
-                                </div>
-                            </div>
+                            <select class="select" required> 
+                                <option value="value1">Пожалуйста выберите</option>
+                                <option value="value2">Значение 2</option>
+                                <option value="value3">Значение 3</option>
+                              </select>
                             <span class="header__form-subtitle">Время *</span>
-                            <div class="dropdown">
-                                <button class="dropdown__btn">4:00 Доступно</button>
-                                <div id="dropdown__items" class="dropdown__content">
-                                    <span class="dropdown__item">15.00</span>
-                                    <span class="dropdown__item">7.00</span>
-                                    <span class="dropdown__item">8.00</span>
-                                </div>
-                            </div>
+                            <select class="select" required> 
+                                <option value="value1">4:00 Доступно</option>
+                                <option value="value2">17.00</option>
+                                <option value="value3">20.00</option>
+                              </select>
                             <button class="header__form-btn" type="submit">
                                 Запись на прием
                             </button>
-                        </label>
+                        </div>
                     </form>
                 </div>
             </div>
