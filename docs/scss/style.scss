@@ -21,6 +21,7 @@
         color: $accent;
         @extend %montserrat-700;
         letter-spacing: 0.1px;
+        z-index: 99;
     }
     &__inner{
         display: flex;
@@ -30,6 +31,7 @@
     }
     &__inner-info{
         max-width: 600px;
+        padding: 0 15px;
     }
     &__inner-title{
         font-size: 58px;
@@ -138,6 +140,7 @@
     }
     &__item{
         width: 328px;
+        padding: 0 15px;
     }
     &__item-wrapper{
         border-radius: 10px;

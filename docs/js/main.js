@@ -13,6 +13,14 @@ $(function () {
     });
 
 
+    $('.menu__box-btn').on('click', function(){
+        $('.menu__list').toggleClass('menu__list--active');
+        $('.menu__box-btn').toggleClass('menu__box-btn--active');
+        $('.header__logo').toggleClass('header__logo--active');
+        $('.menu__box-item').toggleClass('menu__box-item--active');
+        
+    });
+
 
 })
 
